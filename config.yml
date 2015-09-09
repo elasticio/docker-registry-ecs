@@ -1,0 +1,25 @@
+version: 0.1
+log:
+    fields:
+        service: registry
+auth:
+    htpasswd:
+        realm: basic-realm
+        path: /auth/htpasswd
+http:
+    addr: :5000
+    headers:
+        X-Content-Type-Options: [nosniff]
+storage:
+    cache:
+        layerinfo: inmemory
+    s3:
+        accesskey:
+        secretkey:
+        region: set-via-env-vars
+        bucket: set-via-env-vars
+        encrypt: true
+        secure: true
+        v4auth: true
+        chunksize: 5242880
+        rootdirectory: /

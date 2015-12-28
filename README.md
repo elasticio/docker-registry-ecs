@@ -6,8 +6,8 @@ http://www.elastic.io/en/running-a-docker-private-registry-on-ec2/
 
 ## Supported tags and respective Dockerfile links
 
-latest
-2, 2.2.0
+ * latest
+ * 2, 2.2.0
 
 # Run the Registry
 

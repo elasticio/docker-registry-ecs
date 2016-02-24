@@ -1,2 +1,2 @@
-FROM registry:2.2.1
+FROM registry:2.3.0
 COPY config.yml /etc/docker/registry/config.yml
